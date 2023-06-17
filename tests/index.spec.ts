@@ -32,7 +32,7 @@ test.describe('ui test', () => {
 		await expect(html).toHaveClass('scroll-smooth');
 		await expect(page.getByTestId('hero')).toBeVisible();
 		await expect(page.getByTestId('about')).toBeVisible();
-		await expect(page.getByTestId('projects')).toBeVisible();
+		await expect(page.getByTestId('galerie')).toBeVisible();
 		await expect(page.getByTestId('contact')).toBeVisible();
 		await expect(page.getByTestId('footer')).toBeVisible();
 	});
@@ -44,7 +44,7 @@ test.describe('ui test', () => {
 			await header.getByText('About').click();
 			await expect(page).toHaveURL('http://localhost:3000/#about');
 			await header.getByText('Projects').click();
-			await expect(page).toHaveURL('http://localhost:3000/#projects');
+			await expect(page).toHaveURL('http://localhost:3000/#galerie');
 			await header.getByText('Contact').click();
 			await expect(page).toHaveURL('http://localhost:3000/#contact');
 		}
