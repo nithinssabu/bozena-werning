@@ -7,7 +7,7 @@ export default function ContactButton({ label }) {
 	return isNumberShown ? (
 		<div class="typewriter font-monospace text-black">
 			<a href="tel:+4915123255552">
-				<h1>+49 15123255552</h1>
+				<h1>+49 15752561303</h1>
 			</a>
 		</div>
 	) : (
